@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog da Viajem Tur</title>
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: beige;
+        }
+
+        header,
+        footer {
+            background-color: rebeccapurple;
+            color: white;
+            text-align: center;
+            padding: 10px 50px;
+
+        }
+
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        #content1 {
+            text-align: center;
+            padding: 20px;
+        }
+
+        #content2 {
+            text-align: center;
+            padding: 20px;
+        }
+
+        #content3 {
+            text-align: center;
+            padding: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            padding: 0.8%;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rebeccapurple;
+            padding-top: 1%;
+            text-align: center;
+
+        }
+
+        .rodape a {
+            font-size: 0.8rem;
+            color: #ffffff;
+
+        }
+
+        .rodape img {
+            padding: 5%;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header style="margin: auto;">
+        <h1>DICAS E HISTÓRIAS DE VIAGENS INCRÍVEIS</h1>
+    </header>
+
+    <nav>
+        <center>
+            <a href="index.html">HOME</a> |
+            <a href="conteudo_1.html">FÉRIAS DE VERÃO</a> |
+            <a href="conteudo_2.html">LUGARES PARA RELAXAR</a> |
+            <a href="conteudo_3.html">AVENTURA NA NEVE</a> |
+            <a href="roteiros.html">CONTATOS</a>
+        </center>
+    </nav>
+
+    <main>
+        <!-- Página Home -->
+        <h2><strong>Bem-vindo ao nosso blog Viajem Tur!</strong></h2>
+        <p>Aqui você encontrará <strong style="color: rebeccapurple;">dicas, relatos e experiências</strong> de viagens
+            incríveis ao redor do <strong style="color: rebeccapurple;">MUNDO</strong>.</p>
+
+        <h3>Conteúdos em Destaque:</h3>
+
+        <hr>
+        <hr>
+
+        <!-- Conteúdo 1 -->
+        <div style="background-color: antiquewhite;">
+            <h3 style="color: rebeccapurple; font-size: 200%;">FÉRIAS DE VERÃO</h3>
+            <p style="color: rebeccapurple; font-size: 130%;"><u>Banhada pelo Oceano Atlântico na costa mais extensa do
+                    país, está situada na Região Nordeste.<br>
+                    O Estado mais famoso é a gostosa Bahia. Clique e saiba mais sobre este lugar incrivel e
+                    caloroso.</u></p>
+            <a href="conteudo_1.html">
+                <img src="img/Home/nordeste-brasileiro.png" width="800" height="400" alt="Férias de Verão">
+            </a>
+        </div>
+
+        <hr>
+        <hr>
+
+        <!-- Conteúdo 2 -->
+        <div style="background-color: antiquewhite;">
+            <h3 style="color: rebeccapurple; font-size: 200%;">LUGARES PARA RELAXAR</h3>
+            <p style="color: rebeccapurple; font-size: 130%;"><u> O cansaço de uma rotina cheia pode pesar. O estresse é
+                    uma situação bastante comum para uma pessoa que vive atolada em compromissos <br>
+                    Arejar a cabeça e deixar as preocupações de lado, nem que seja por um final de semana. Confira essas
+                    dicas.</u></p>
+            <a href="conteudo_2.html">
+                <img src="img/Home/Relaxar.jpg" width="800" height="400" alt="Relaxar">
+            </a>
+        </div>
+
+        <hr>
+        <hr>
+
+        <!-- Conteúdo 3 -->
+        <div style="background-color: antiquewhite;">
+            <h3 style="color: rebeccapurple; font-size: 200%;">AVENTURA NA NEVE</h3>
+            <p style="color: rebeccapurple; font-size: 130%;"><u>A temporada de neve no Chile geralmente ocorre durante
+                    os meses de inverno,<br>
+                    entre os meses de junho a setembro. Temos dicas de visitas para esquiar ou tomar um bom vinho
+                    Chileno.</u></p>
+            <a href="conteudo_3.html">
+                <img src="img/Home/Chile.jpg" width="800" height="400" alt="Neve">
+            </a>
+        </div>
+
+        <hr>
+        <hr>
+
+        <!--Caixa de dialogo-->
+        <p><strong>Informe seus dados:</strong>
+        <p>
+
+            <input type="text" id="email" placeholder="Digite seu e-mail"><br><br>
+            <input type="text" id="nome" placeholder="Digite seu nome"><br><br>
+            <input type="text" id="telefone" placeholder="Digite seu telefone"><br><br>
+
+        <h2 style="color: rebeccapurple;">Conte-nos uma história da sua viajem:</h2>
+
+        <textarea id="historia" rows="4" cols="50"></textarea><br><br>
+
+        <button onclick="pedirHistoria()">Enviar</button>
+
+        <script>
+            function pedirHistoria() {
+                var email = document.getElementById('email').value;
+                var nome = document.getElementById('nome').value;
+                var telefone = document.getElementById('telefone').value;
+
+                var historia = document.getElementById('historia').value;
+
+                alert('Obrigado por compartilhar sua história')
+            }
+        </script>
+
+</body>
+
+</html>
+</main>
+
+<!--Rodapé-->
+
+<footer>
+
+    <div class="rodape">
+        <div class="rodape">
+            <p>Contato:</p>
+            <p>E-mail: blogtur@blogtur.com.br</p>
+            <p>Rua da Alegria, Vitória/ES</p>
+        </div>
+    </div>
+    <div>
+        <p><strong>Siga as nossas redes sociais</strong></p>
+        <a href="facebook.html"><img src="img/facebook.png" alt="Facebook Blog"></a>
+        <a href="instagram.html"><img src="img/instagram.png" alt="Instagram Blog"></a>
+        <a href="youtube.html"><img src="img/youtube.png" alt="Youtube Blog"></a>
+    </div>
+    <p>&copy; 2024 Blog de Viagens</p>
+
+
+</footer>
+</body>
+
+</html>
